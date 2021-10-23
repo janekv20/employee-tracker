@@ -136,7 +136,7 @@ function addRole() {
             if (err) throw err;
             console.log("Role has been added");
             console.table(result);
-            starterPrompt();
+            loadPrompt();
             });
     ``})
     })
@@ -201,7 +201,7 @@ db.query(mngerSql, (err, employeeData) =>{
         if (err) throw err;
         console.log("Employee has been added")
         console.table(result);
-        starterPrompt();
+        loadPrompt();
         });
 ``})
 })
@@ -251,12 +251,12 @@ db.query(roleSql, (err, roleData) => {
             if (err) throw err;
             console.log("Employee has been updated")
             console.table(result);
-            starterPrompt();
+            loadPrompt();
             });
     })
    })
 })
-// starterPrompt();
+ loadPrompt();
 }
 
 function quitTracker(){
@@ -264,7 +264,7 @@ console.log("Goodbye")
 process.exit();
 }
 
-starterPrompt();
+loadPrompt();
 
 // Start server after DB connection
 db.connect(err => {
