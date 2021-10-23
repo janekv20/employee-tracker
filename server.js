@@ -41,6 +41,10 @@ function loadPrompt(){
             addRole();
         } else if (selection === "Add A Department") {
             addDepartment();
+        } else if (selection === "Update An Employee Role") {
+            updateEmployee();
+        } else if (selection === "Quit"){
+            quitTracker();
         }
     })
 }
