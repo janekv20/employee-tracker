@@ -1,5 +1,9 @@
-DROP DATABASE IF EXISTS companyTracker;
+DROP DATABASE IF EXISTS employeeTracker;
 
-CREATE DATABASE companyTracker;
+CREATE DATABASE employeeTracker;
 
-USE companyTracker;
+USE employeeTracker;
+
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS employees;
